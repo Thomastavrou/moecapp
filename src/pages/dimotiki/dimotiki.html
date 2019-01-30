@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <img class="c2g-image-logo" src="http://moec.com2go.co/assets/img/logo-ioic.jpg" alt="">
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row *ngFor="let item of data" >
+      <ion-col *ngIf="item.template == '8' && item.parent=='56'">
+        <ion-list (click)="viewArticle(item)">
+          <h4 class="c2g-border" >{{ item.pagetitle }}</h4>
+          <p>{{ item.longtitle | slice:0:150}}</p>
+        </ion-list>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

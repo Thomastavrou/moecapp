@@ -4,7 +4,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { PediaPage } from '../pages/pedia/pedia';
+import { PolitismosPage } from '../pages/politismos/politismos';
+import { AthlitismosPage } from '../pages/athlitismos/athlitismos';
+import { NeoleaPage } from '../pages/neolea/neolea';
+import { AnakinosisPage } from '../pages/anakinosis/anakinosis';
+import { EpikerotitaPage } from '../pages/epikerotita/epikerotita';
 
 @Component({
   templateUrl: 'app.html'
@@ -22,8 +27,15 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Παιδεία', component: PediaPage },
+      { title: 'Πολιτισμός', component: PolitismosPage },
+      { title: 'Αθλητισμός', component: AthlitismosPage },
+      { title: 'Νεολαία', component: NeoleaPage },
+      { title: 'Ανακοινώσεις', component: AnakinosisPage },
+      { title: 'Επικαιρότητα', component: EpikerotitaPage }
     ];
+
+
 
   }
 
@@ -33,6 +45,20 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+
+      // OneSignal Code start:
+      // Enable to debug issues:
+      // window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+
+
+      var notificationOpenedCallback = function(jsonData) {
+        console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+      };
+
+      window["plugins"].OneSignal
+        .startInit("050ee4a4-f939-42c5-bf34-f35e395d4afe", "683140671042")
+        .handleNotificationOpened(notificationOpenedCallback)
+        .endInit();
     });
   }
 

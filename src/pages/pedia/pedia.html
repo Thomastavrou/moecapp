@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <img class="c2g-image-logo" src="http://moec.com2go.co/assets/img/logo-ioic.jpg" alt="">
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-grid>
+    <ion-row *ngFor="let item of data" >
+      <ion-col *ngIf="item.template == '8' && item.parent=='4'">
+        <ion-list (click)="viewArticle(item)">
+          <h4 class="c2g-border" >{{item.pagetitle}}</h4>
+          <p>{{ item.longtitle }}</p>
+        </ion-list>
+    </ion-col>
+    </ion-row>
+  </ion-grid> -->
+  <ion-grid no-padding >
+      <ion-row no-padding>
+        <ion-col *ngFor="let item of hello" col-6>
+            <ion-card no-padding >
+                <img src="http://moec.com2go.co/{{item.value}} ">
+                <ion-card-content >
+                <ion-card-title>
+                <h2 class="c2g-border">{{item.pagetitle}}</h2>
+                </ion-card-title>
+                <p>
+                  {{item.longtitle | slice:0:150}}
+                </p>
+                </ion-card-content>
+              <button class="c2g-button" (click)="ViewData(item.pagetitle)">Περισσότερα</button>
+
+            </ion-card>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>

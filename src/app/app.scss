@@ -14,3 +14,34 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+    color: #f1b523 !important;
+    background-color: transparent;
+}
+
+p{
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+}
+
+
+h2 {
+  font-weight: bold !important;
+}
+
+.c2g-image-logo{
+  padding-left: 15%;
+  padding-right: 20%;
+}
+
+
+.c2g-button{
+  border: 1px solid #2c2c2c !important;
+  background-color: transparent !important;
+  color: #2c2c2c !important;
+  padding: 5px 15px !important;
+  border-radius: 5px !important;
+  margin: 15px;
+}
