@@ -50,16 +50,16 @@ export class MyApp {
       // Enable to debug issues:
       // window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
 
-
-    //   var notificationOpenedCallback = function(jsonData) {
-    //     console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-    //   };
-    //
-    //   window["plugins"].OneSignal
-    //     .startInit("050ee4a4-f939-42c5-bf34-f35e395d4afe", "683140671042")
-    //     .handleNotificationOpened(notificationOpenedCallback)
-    //     .endInit();
-    // });
+      //
+      // var notificationOpenedCallback = function(jsonData) {
+      //   console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+      // };
+      //
+      // window["plugins"].OneSignal
+      //   .startInit("050ee4a4-f939-42c5-bf34-f35e395d4afe", "683140671042")
+      //   .handleNotificationOpened(notificationOpenedCallback)
+      //   .endInit();
+    });
   }
 
   openPage(page) {
