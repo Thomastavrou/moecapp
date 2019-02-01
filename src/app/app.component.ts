@@ -50,15 +50,18 @@ export class MyApp {
       // Enable to debug issues:
       // window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
 
+      if(this.platform.is('core') || this.platform.is('mobileweb')) {
+           console.log("Platform is core or is mobile web");
+              } else {
+                   var notificationOpenedCallback = function(jsonData) {
+                     console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+                    };
 
-      var notificationOpenedCallback = function(jsonData) {
-        console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-      };
-
-      window["plugins"].OneSignal
-        .startInit("050ee4a4-f939-42c5-bf34-f35e395d4afe", "683140671042")
-        .handleNotificationOpened(notificationOpenedCallback)
-        .endInit();
+            window["plugins"].OneSignal
+              .startInit("050ee4a4-f939-42c5-bf34-f35e395d4afe", "683140671042")
+              .handleNotificationOpened(notificationOpenedCallback)
+              .endInit();
+            }
     });
   }
 
