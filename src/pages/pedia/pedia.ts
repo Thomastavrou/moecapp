@@ -5,6 +5,7 @@ import { DetailsPage } from '../details/details';
 import { MesiPage } from '../mesi/mesi';
 import { DimotikiPage } from '../dimotiki/dimotiki';
 import { AnoteriPage } from '../anoteri/anoteri';
+import { VradinaPage } from '../vradina/vradina';
 
 /**
  * Generated class for the PediaPage page.
@@ -39,9 +40,10 @@ export class PediaPage {
 ViewData(link){
 
   let pages = [
-    { title: 'Δημοτική Προδημοτική', component: DimotikiPage },
-    { title: 'Ανώτερη / Ανώτατη', component: AnoteriPage },
-    { title: 'Μεση Γενικη & Τεχνικη', component: MesiPage }
+    { title: 'Προδημοτική/Δημοτική', component: DimotikiPage },
+    { title: 'Ανώτερη', component: AnoteriPage },
+    { title: 'Μεση Γενικη & Τεχνικη', component: MesiPage },
+    { title: 'Απογευματινά Βραδινά Προγράμματα', component: VradinaPage },
 
   ];
 

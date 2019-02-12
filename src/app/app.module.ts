@@ -18,6 +18,7 @@ import { DetailsPage } from '../pages/details/details';
 import { MesiPage } from '../pages/mesi/mesi';
 import { DimotikiPage } from '../pages/dimotiki/dimotiki';
 import { AnoteriPage } from '../pages/anoteri/anoteri';
+import { VradinaPage } from '../pages/vradina/vradina';
 import { HeaderComponent } from '../components/header/header';
 
 
@@ -39,7 +40,8 @@ import { DataProvider } from '../providers/data/data';
     MesiPage,
     AnoteriPage,
     DimotikiPage,
-    HeaderComponent
+    HeaderComponent,
+    VradinaPage
   ],
   imports: [
     BrowserModule,
@@ -60,7 +62,8 @@ import { DataProvider } from '../providers/data/data';
     DetailsPage,
     MesiPage,
     AnoteriPage,
-    DimotikiPage
+    DimotikiPage,
+    VradinaPage
   ],
   providers: [
     StatusBar,
