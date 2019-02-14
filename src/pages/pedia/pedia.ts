@@ -43,7 +43,7 @@ ViewData(link){
     { title: 'Προδημοτική/Δημοτική', component: DimotikiPage },
     { title: 'Ανώτερη', component: AnoteriPage },
     { title: 'Μεση Γενικη & Τεχνικη', component: MesiPage },
-    { title: 'Απογευματινά Βραδινά Προγράμματα', component: VradinaPage },
+    { title: 'Απογευματινά Βραδινά Προγράμματα', component: VradinaPage }
 
   ];
 
