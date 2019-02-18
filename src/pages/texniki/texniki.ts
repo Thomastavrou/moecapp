@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
 import { DetailsPage } from '../details/details';
+
 /**
- * Generated class for the MesiPage page.
+ * Generated class for the TexnikiPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,14 +12,13 @@ import { DetailsPage } from '../details/details';
 
 @IonicPage()
 @Component({
-  selector: 'page-mesi',
-  templateUrl: 'mesi.html',
+  selector: 'page-texniki',
+  templateUrl: 'texniki.html',
 })
-export class MesiPage {
- data:any;
- constructor(public navCtrl: NavController, public navParams: NavParams, private dataProvider:DataProvider) {
- }
-
+export class TexnikiPage {
+    data:any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, private dataProvider:DataProvider) {
+  }
   ionViewWillEnter(){
       this.dataProvider.getData().subscribe(
         data => {
@@ -26,10 +26,11 @@ export class MesiPage {
         }
       );
     }
-    viewArticle(article){
-      this.navCtrl.push(DetailsPage,{
-        article:article
-      });
-    }
 
+
+        viewArticle(article){
+          this.navCtrl.push(DetailsPage,{
+            article:article
+          });
+        }
 }

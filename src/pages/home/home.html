@@ -13,10 +13,10 @@
     <ion-row  *ngIf="data" no-padding>
         <ion-col *ngFor="let item of data" col-6>
             <ion-card no-padding >
-                <img src="http://moec.com2go.co/{{item.value}} ">
-                <ion-card-content >
+                <img src="http://moec.com2go.co/{{item.url}} ">
+                <ion-card-content>
                 <ion-card-title>
-                <h2 class="c2g-border">{{item.pagetitle}}</h2>
+                <h4 class="c2g-border"><strong>{{item.pagetitle}}</strong></h4>
                 </ion-card-title>
                 <p>
                   {{item.longtitle | slice:0:150}}

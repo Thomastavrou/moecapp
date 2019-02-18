@@ -9,9 +9,10 @@ import { Injectable } from '@angular/core';
 */
 @Injectable()
 export class DataProvider {
+  base = 'http://moec.com2go.co;'
   url = 'http://com2go.co/moec_api/api/post/read.php';
   constructor(public http: HttpClient) {
-      // this.url;
+      this.base;
   }
 
 

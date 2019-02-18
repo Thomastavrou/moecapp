@@ -11,9 +11,10 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <h4 class="c2g-border">{{ item.pagetitle | slice:0:50 }}</h4>
+        <h4 class="c2g-border">{{ item.pagetitle | slice:0:50 }}...</h4>
         <p>{{item.content | slice:0:150}}</p>
-    </ion-col>
+        <a href="{{base}}{{item.url}}"><img class="pdf" src="assets/imgs/pdf.png" alt="">{{item.pagetitle}}</a>
+      </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>

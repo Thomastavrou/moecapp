@@ -16,7 +16,9 @@ import { EpikerotitaPage } from '../pages/epikerotita/epikerotita';
 import { NeoleaPage } from '../pages/neolea/neolea';
 import { DetailsPage } from '../pages/details/details';
 import { MesiPage } from '../pages/mesi/mesi';
+import { TexnikiPage } from '../pages/texniki/texniki';
 import { DimotikiPage } from '../pages/dimotiki/dimotiki';
+import { ProdimotikiPage } from '../pages/prodimotiki/prodimotiki';
 import { AnoteriPage } from '../pages/anoteri/anoteri';
 import { VradinaPage } from '../pages/vradina/vradina';
 import { HeaderComponent } from '../components/header/header';
@@ -40,6 +42,8 @@ import { DataProvider } from '../providers/data/data';
     MesiPage,
     AnoteriPage,
     DimotikiPage,
+    ProdimotikiPage,
+    TexnikiPage,
     HeaderComponent,
     VradinaPage
   ],
@@ -60,6 +64,8 @@ import { DataProvider } from '../providers/data/data';
     EpikerotitaPage,
     NeoleaPage,
     DetailsPage,
+    ProdimotikiPage,
+    TexnikiPage,
     MesiPage,
     AnoteriPage,
     DimotikiPage,

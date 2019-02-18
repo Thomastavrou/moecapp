@@ -22,13 +22,13 @@
       <ion-row no-padding>
         <ion-col *ngFor="let item of hello" col-6>
             <ion-card no-padding >
-                <img src="http://moec.com2go.co/{{item.value}} ">
+                <img src="http://moec.com2go.co/{{item.url}} ">
                 <ion-card-content >
                 <ion-card-title>
-                <h2 class="c2g-border">{{item.pagetitle}}</h2>
+                <h6 class="c2g-border"><strong>{{item.pagetitle}}</strong></h6>
                 </ion-card-title>
                 <p>
-                  {{item.longtitle | slice:0:150}}
+                  {{item.introtext | slice:0:400}} ...
                 </p>
                 </ion-card-content>
               <button class="c2g-button" (click)="ViewData(item.pagetitle)">Περισσότερα</button>

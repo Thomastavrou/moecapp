@@ -9,11 +9,11 @@
 
 <ion-content padding>
   <ion-grid>
-          <ion-row *ngFor="let item of data">
-      <ion-col *ngIf="item.template == '8' && item.parent=='136'">
+    <ion-row *ngFor="let item of data" >
+      <ion-col *ngIf="item.template == '8' && item.parent=='137'">
         <ion-list (click)="viewArticle(item)">
           <h4 class="c2g-border" >{{ item.pagetitle }}</h4>
-          <p>{{ item.longtitle | slice:0:150}}</p>
+          <p>{{ item.longtitle | slice:0:150 }}</p>
         </ion-list>
     </ion-col>
     </ion-row>
